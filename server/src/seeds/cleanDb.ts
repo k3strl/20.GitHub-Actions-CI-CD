@@ -7,10 +7,10 @@ export default async (modelName: "Question", collectionName: string) => {
       // let modelExists = await models[modelName].db.db.listCollections({
       //   name: collectionName
       // }).toArray();
+      
       await db.dropCollection(collectionName);
     }
 
-    
     // if (modelExists.length) {
     //   await db.dropCollection(collectionName);
     // }
