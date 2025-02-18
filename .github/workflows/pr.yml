@@ -29,3 +29,5 @@ jobs:
       - name: Run cypress component tests
         run: npx cypress run --component
 
+      - name: Test Summary Results
+        run: npx github-actions-ctrf ctrf/ctrf-report.json
